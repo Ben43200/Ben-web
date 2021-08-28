@@ -1,0 +1,141 @@
+body{
+    background-color:black ;
+}
+h1{
+    font-size:5rem;
+    color: white;
+animation: 3s linear 1s infinite alternate color;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+h2{
+    font-size:4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:white;
+}
+
+
+@keyframes color {
+     from{
+     color:white}
+    to   { 
+    color:black;}
+  }
+
+  .fas{
+      font-size: 6rem;
+      color:grey;
+      animation: 3s linear 1s infinite alternate opaanim;
+    
+  }
+  .info{
+      display: flex;
+      justify-content: center;
+      align-content:center;
+      flex-direction: column;
+  }
+
+  @keyframes opaanim {
+    from { opacity:0}
+    to   { opacity:1 }
+  }
+
+  img{
+      width: 100%;
+      height:100%;
+  }
+
+  .card{
+      width:500px;
+      height:500px;
+     
+     
+  }
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 4rem; 
+display: flex;
+
+justify-content: center;
+align-content: center;
+
+}
+
+
+    a:hover{
+        color:royalblue;
+        z-index: 1;
+    }
+    
+h4{
+    
+    color:saddlebrown;
+ font-size:3rem;
+}
+
+.projets{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main{
+    align-items: center;
+}
+
+@media screen and (max-width: 620px){
+    .fas{
+    visibility: hidden;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projets{
+        flex-direction: column;
+       justify-content: space-evenly;
+    }
+  
+    .card{
+        height:150px;
+        width:100px;
+    }
+ 
+}
+@media screen and (max-width: 920px){
+    .card{
+        height:300px;
+        width: 300px;
+    }
+h4{
+    font-size:2rem;
+}
+}
+@media screen and (max-width: 1024px){
+    .fas{
+    visibility: hidden;
+    }
+ 
+    .projets{
+        flex-direction: column;
+       justify-content: space-evenly;
+    }
+  
+  
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+   
